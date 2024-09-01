@@ -3,14 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://github.com/leomaciel14/Refatoracao-Multi-App",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^1.7.5",
+    "gh-pages": "^6.1.1",
     "graphql": "^16.9.0",
     "json-server": "^1.0.0-beta.1",
     "qrcode.react": "^3.1.0",
