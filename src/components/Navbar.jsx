@@ -6,13 +6,14 @@ import { FaQrcode, FaSearch, FaTasks, FaRegQuestionCircle, FaGlobeAmericas, FaNe
 // Estilo da barra de navegação
 const NavBar = styled.div`
   width: 240px;
-  background-color: #2c3e50;
+  background-color: #161e27;
   color: white;
   height: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px;
   box-shadow: 3px 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 99;
 
   @media (max-width: 768px) {
     width: 100%;
@@ -55,6 +56,20 @@ const NavBarToggle = styled.div`
   }
 `;
 
+const StyledButton = styled.button`
+margin-top: 20px;
+color: white;
+background-color: transparent;
+border: 1px solid white;
+border-radius: full;
+width: 90%;
+transition: background-color 0.3s;
+
+&:hover {
+background-color: rgba(255, 255, 255, 0.1);
+}
+`;
+
 const Navbar = ({ handleAccess, handleLogout }) => {
 
     const [isNavBarOpen, setIsNavBarOpen] = useState(false);
@@ -67,7 +82,9 @@ const Navbar = ({ handleAccess, handleLogout }) => {
     return (
         <>
             <NavBarToggle onClick={toggleNavBar}>
-                <FaBars size={24} color="#002933" />
+                <FaBars id="FaBars"
+                    size={24}
+                    color={isNavBarOpen ? '#ffffff' : '#000000'} />
             </NavBarToggle>
             <NavBar isOpen={isNavBarOpen}>
                 <StyledLink onClick={() => handleAccess(0, "QRCodeGenerator")}>
@@ -94,17 +111,9 @@ const Navbar = ({ handleAccess, handleLogout }) => {
                     <FaGlobeAmericas />
                     Translator
                 </StyledLink>
-                <button
-                    onClick={handleLogout}
-                    style={{
-                        marginTop: "20px",
-                        color: "white",
-                        backgroundColor: "transparent",
-                        border: "none",
-                    }}
-                >
+                <StyledButton onClick={handleLogout}>
                     Logout
-                </button>
+                </StyledButton>
             </NavBar>
         </>
     );

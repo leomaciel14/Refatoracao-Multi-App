@@ -9,6 +9,7 @@ import MovieSearchEngine from "./pages/MovieSearchEngine";
 import TodoApp from "./pages/TodoApp";
 import QuizApp from "./pages/QuizApp";
 import LanguageTranslator from "./pages/LanguageTranslator";
+import Translation from "./Trash/Translation";
 
 
 import Login from "./components/Login";

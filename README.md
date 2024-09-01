@@ -1,4 +1,4 @@
-# Multi App
+# Refatoração Multi App
 
 Este é um aplicativo multifuncional desenvolvido em React, que oferece uma variedade de ferramentas e utilitários para diferentes propósitos. O aplicativo permite que os usuários façam login e acessem várias funcionalidades, cada uma com seu próprio conjunto de características.
 
@@ -62,8 +62,8 @@ Este é um aplicativo multifuncional desenvolvido em React, que oferece uma vari
 
 1. **Clone o Repositório**:
    ```bash
-   git clone <URL_DO_REPOSITORIO>
-   cd <NOME_DO_DIRETORIO>
+   git clone https://github.com/leomaciel14/Refatoracao-Multi-App
+   cd Refatoracao-Multi-App
    ```
 
 2. **Instale as Dependências**:
@@ -85,7 +85,3 @@ Este é um aplicativo multifuncional desenvolvido em React, que oferece uma vari
 Sinta-se à vontade para contribuir com melhorias ou correções. Para isso, faça um fork do repositório, crie uma branch para sua feature ou correção, e envie um pull request.
 
 Este projeto foi desenvolvido como um exercício de aprendizado em React e gerenciamento de estado. Agradecemos por explorar e contribuir!
-
-## Notas Finais
-
-Substitua `<URL_DO_REPOSITORIO>` e `<NOME_DO_DIRETORIO>` com o URL real do seu repositório e o nome do diretório, respectivamente.

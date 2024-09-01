@@ -4,7 +4,7 @@ import styled from "styled-components";
 // Estiliza o rodapé do aplicativo.
 const FooterStyled = styled.div`
 width: 100%;
-background-color: #2c3e50;
+background-color: #1c2834;
 color: white;
 text-align: center;
 padding: 10px 0;
